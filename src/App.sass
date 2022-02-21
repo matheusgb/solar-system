@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Press+Start+2P&display=swap');
+
+$container-width: 1170px
+$mobile: 425px
+$medium: 750px
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  display: flex
+  justify-content: center
+  align-content: center
+  font-family: 'Press Start 2P'
+  margin-bottom: 20px
+  border-top: rgb(102, 20, 237) 3px solid
+  background-color: rgb(5, 1, 11)
+  color: white
+  
+  
+
+.header
+  width: $container-width
+  display: flex
+  justify-content: center
+  font-size: 13px
+  padding-bottom: 5px
+  margin: 15px 0
+  @media(max-width: 1180px)
+    width: $medium
+  @media(max-width: 750px)
+    width: $mobile
+
+.title
+  display: flex
+  justify-content: center
+  font-weight: 500
+  background-color: rgb(102, 20, 237)
+  border-radius: 3px
+  margin-bottom: 10px
+  padding: 5px 0
+
+  &:nth-child(1)
+    margin-bottom: 20px
+
+.cards 
+  max-width: $container-width
+  display: flex
+  flex-wrap: wrap
+  display: flex
+  justify-content: center
+  padding-bottom: 30px
+  padding-top: 20px 
+  // border: solid 3px red
+  @media(max-width: 1180px)
+    width: $medium
+  @media(max-width: 750px)
+    width: $mobile
+
+  img
+    width: 270px
+    transition: 1s
+    @media(max-width: 750px)
+      width: 180px
+
+    &:hover
+      width: 310px
+      margin: -40px -10px 4px
+
+  p
+    font-size: 20px
+    @media(max-width: 750px)
+      font-size: 10px
+
+.inner-card
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 30px
+
+.planets
+  display: flex
+  justify-content: center
+
+.missions 
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 340px
+  border: solid rgb(102, 20, 237) 3px
+  margin-right: 10px
+  margin-top: 10px
+  border-radius: 15px
+  padding-bottom: 5px
+  font-size: 10px
+
+  &:hover
+    transition: 0.5s
+    border: solid white 3px
+
+    div
+      transition: 0.5s
+      background-color: white
+    
+      p
+        transition: 0.5s
+        color: black
+
+  &:last-child
+    margin-right: 0px
+
+  div
+    width: 100%
+    background-color: rgb(102, 20, 237)
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+    display: flex
+    justify-content: center
+    padding: 5px 0
+    margin-bottom: 5px
+
+    p
+      color: white
+
+  p
+    margin: 5px 0
+
+.total-missions
+  width: $container-width
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  border-radius: 15px
+  @media(max-width: 1180px)
+    width: $medium
+  @media(max-width: 750px)
+    width: $mobile
+
+//usaremos _mixins para criar responsividade juntamente com o @media

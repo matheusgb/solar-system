@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'Press Start 2P';
+  margin-bottom: 20px;
+  border-top: #6614ed 3px solid;
+  background-color: #05010b;
+  color: white;
+}
+
+.header {
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  padding-bottom: 5px;
+  margin: 15px 0;
+}
+
+@media (max-width: 1180px) {
+  .header {
+    width: 750px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    width: 425px;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  background-color: #6614ed;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+.title:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.cards {
+  max-width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+@media (max-width: 1180px) {
+  .cards {
+    width: 750px;
+  }
+}
+
+@media (max-width: 750px) {
+  .cards {
+    width: 425px;
+  }
+}
+
+.cards img {
+  width: 270px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@media (max-width: 750px) {
+  .cards img {
+    width: 180px;
+  }
+}
+
+.cards img:hover {
+  width: 310px;
+  margin: -40px -10px 4px;
+}
+
+.cards p {
+  font-size: 20px;
+}
+
+@media (max-width: 750px) {
+  .cards p {
+    font-size: 10px;
+  }
+}
+
+.inner-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+}
+
+.planets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.missions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 340px;
+  border: solid #6614ed 3px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding-bottom: 5px;
+  font-size: 10px;
+}
+
+.missions:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: solid white 3px;
+}
+
+.missions:hover div {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.missions:hover div p {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+}
+
+.missions:last-child {
+  margin-right: 0px;
+}
+
+.missions div {
+  width: 100%;
+  background-color: #6614ed;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+.missions div p {
+  color: white;
+}
+
+.missions p {
+  margin: 5px 0;
+}
+
+.total-missions {
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+}
+
+@media (max-width: 1180px) {
+  .total-missions {
+    width: 750px;
+  }
+}
+
+@media (max-width: 750px) {
+  .total-missions {
+    width: 425px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
